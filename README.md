@@ -1,6 +1,6 @@
 # k8s-infra-deploy
 
-This repository contains the infrastructure-as-code (IaC) manifests for deploying and managing Kubernetes workloads using a GitOps-style CI/CD pipeline. It integrates with Jenkins to automatically apply changes to a Kubernetes cluster based on updates pushed to this repository.
+This repository contains Kubernetes manifests and CI/CD pipeline definitions used to deploy and manage infrastructure using a GitOps-driven workflow. It integrates with Jenkins to automatically apply changes to different environments based on branch promotion.
 
 ---
 
@@ -8,8 +8,10 @@ This repository contains the infrastructure-as-code (IaC) manifests for deployin
 
 ```bash
 .
-├── Jenkinsfile          # CI/CD pipeline definition for Jenkins
+├── Jenkinsfile          # Jenkins pipeline for CI/CD
 ├── deployment.yaml      # Kubernetes Deployment manifest
 ├── service.yaml         # Kubernetes Service manifest
-├── ingress.yaml         # Ingress resource for external access
-└── README.md            # This documentation
+├── ingress.yaml         # Ingress rule for app exposure
+└── README.md            # Documentation
+
+# Trigge

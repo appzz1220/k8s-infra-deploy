@@ -14,4 +14,4 @@ This repository contains Kubernetes manifests and CI/CD pipeline definitions use
 ├── ingress.yaml         # Ingress rule for app exposure
 └── README.md            # Documentation
 
-# Trigge
+# Trigge 1

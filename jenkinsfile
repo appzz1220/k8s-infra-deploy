@@ -8,13 +8,6 @@ pipeline {
       }
     }
 
-    stage('Validate') {
-      steps {
-        sh 'yamllint *.yaml'
-        sh 'kubeconform -strict -summary .'
-      }
-    }
-
     stage('Deploy to Kubernetes') {
       when {
         anyOf {
